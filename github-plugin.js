@@ -1,17 +1,18 @@
+
 import {
     html,
     LitElement,
   } from "https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js";
   // defining the component
-  export class Github extends LitElement {
+  export class GitHubPages extends LitElement {
     // return a promise for contract changes.
     static async getMetaConfig() {
       return {
-        title: "Github",
+        title: "githubpages",
         fallbackDisableSubmit: false,
         version: "1.2",
         description: "test example",
-        iconUrl: 'https://designsystem.nintextest.com/icons/rich-text.svg',
+        iconUrl: 'one-line-numbers',
         groupName: "Testing",
         properties: {
           intAttr: {
@@ -76,10 +77,10 @@ import {
       };
     }
     render() {
-      return html`<input placeholder="Github" />`;
+      return html`<input placeholder="githubpages" />`;
     }
   }
   
   // registering the web component
-  const elementName = "Github-test";
-  customElements.define(elementName, Github);
+  const elementName = "githubpages-test";
+  customElements.define(elementName, GitHubPages);
